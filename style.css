@@ -252,9 +252,10 @@ ul li:hover > a {
 }
 
 .submenu {
-    /* position: absolute; */
-    display: none;
+    position: absolute; 
+    top: 50px;
     left: -1px;
+    display: none;
 }
 
 .main-nav .arrow::after {
@@ -266,4 +267,5 @@ ul li:hover > a {
 
 li {
     position: relative;
+    padding: -1px;
 }
