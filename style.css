@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -391,14 +391,21 @@ span {
 .add-to-cart-btn {
     position: relative;
     top: -8px;
-    border: rgba(255, 255, 255, 0.25) solid 0px;
-    background-position: 10px 10px;
+    background-color: inherit;
+    border: #fff solid 1px;
     color: #fff;
     font-size: 20px;
     height: 48px;
     width: 210px;
+
+}
+
+.more-details-btn:hover, .add-to-cart-btn:hover {
+    border: rgba(255, 255, 255, 0.25) solid 0px;
+    background-position: 10px 10px;
     background-color: rgba(255, 255, 255, 0.25);
 }
+
 
 .white-cart {
     background-image: url(images/cart.png);
