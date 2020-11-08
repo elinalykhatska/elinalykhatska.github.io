@@ -68,10 +68,14 @@ body {
     margin-right: -15px;
 }
 
-.row::after, .menu::after {
+.row::after, .menu::after{
     content: "";
     display: block;
     clear: both;
+} 
+
+.row2::after {
+    height: 30px;
 } 
 
 .col-md-3 {
@@ -141,8 +145,8 @@ body {
     background-position: 8px 8px;
     padding: 4px;
     position: relative;
-    top: 5px;
-    right: -2px;
+    top: -35px;
+    right: -158px;
 }
 
 .search {
@@ -268,4 +272,199 @@ ul li:hover > a {
 li {
     position: relative;
     padding: -1px;
+}
+
+.col-md-1 {
+    width: 100px;
+}
+
+.col-md-10 {
+    width: 1000px;
+}
+
+.col-md-4 {
+    width: 300px;
+    padding: 30px;
+    margin: -3px;
+    height: 650px;
+}
+
+.items {
+    border: #fff solid 1px;
+    width: 270px;
+}
+
+.slide {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    height: 400px;
+    padding: 150px;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.25);
+    height: 400px;
+}
+
+.checkbox {
+    color: white;
+    font-weight: 100;
+    float: left;
+    width: 270px;
+    height: 845px;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 30px;
+}
+
+p {
+    color: #fff;
+    font-size: 34px;
+}
+
+.section {
+    border-bottom: #fff solid 1px;
+}
+
+.headline-main {
+    height: 160px;
+    padding-top: 65px;
+    padding-left: 30px;
+}
+
+.product {
+    width: 270px;
+    color: #fff;
+    font-weight: 100;
+    font-size: 20px;
+    border-right: #fff solid 1px;
+    position: relative;
+}
+
+.product-img {
+    height: 180px;
+    width: 270px;
+    background: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    padding: 40px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.device-name {
+    font-size: 30px;
+}
+
+.product-description {
+    height: 470px;
+    background: #2c72b894;
+}
+
+.device {
+    padding: 8px;
+}
+
+.product-price {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    top: 20px;
+}
+
+.btns {
+    margin: 30px;
+}
+
+.more-details-btn {
+    background-color: inherit;
+    border: #fff solid 1px;
+    height: 48px;
+    width: 210px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.add-to-cart-btn {
+    position: relative;
+    top: -8px;
+    border: rgba(255, 255, 255, 0.25) solid 0px;
+    background-position: 10px 10px;
+    color: #fff;
+    font-size: 20px;
+    height: 48px;
+    width: 210px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.white-cart {
+    background-image: url(images/cart.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 14px;
+    left: 175px;
+    padding: 12px;
+}
+
+.addtocart {
+    position: absolute;
+    left: 27px;
+    top: 14px;
+}
+
+.change {
+    font-size: 26px;
+    position: relative;
+    top: -43px;
+    left: 65px;
+}
+
+.change2 {
+    font-size: 26px;
+    position: relative;
+    top: -43px;
+    left: 75px;
+}
+
+.zoom {
+    background-image: url(images/icon8.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 225px;
+    border: #2c71b8 solid 1px;
+    width: 30px;
+    height: 30px;
+}
+
+.favourite {
+    background-image: url(images/icon5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 225px;
+    border: #2c71b8 solid 1px;
+    width: 30px;
+    height: 30px;
+}
+
+.zoom:hover {
+    background: #2c71b8;
+    background-image: url(images/icon6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.favourite:hover {
+    background: #2c71b8;
+    background-image: url(images/icon7.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
