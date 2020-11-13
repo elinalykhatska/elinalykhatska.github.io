@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 9 - Shop project</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,8 +23,8 @@
                 <div class="col-md-6">
                     <nav class="main-nav">
                         <ul class="menu">
-                            <li><a href="">Home 1</a></li>
-                            <li><a href="">Products 2
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Products
                                 <span class="arrow"></span>
                             </a>
                                 <div class="arrow-down"></div>
@@ -36,7 +38,7 @@
                                     <li><a href="#">Ut enim ad minim veniam</a></li>
                                     <li><a href="#">Quis nostrud</a></li>
                                 </ul></div></li>
-                            <li><a href="">Payment 3</a></li>
+                            <li><a href="">Payment</a></li>
                             <li><a href="">Shipping</a></li>
                         </ul>
                     </nav>
@@ -44,7 +46,7 @@
                 <div class="col-md-3">
                     <div class="row">
                         <div class="col-md-9">
-                            <div class="col-md-10">
+                            <div class="col-md-4.2">
                                 <form action="" id="search">
                                 <input class="search" type="text" placeholder="search" maxlength="20">
                             </div>
@@ -82,21 +84,21 @@
         <div class="container">
             <div class="row">
                 <aside class="checkbox">
-                <div col-md-3>
-                    <legend>DEVICE TYPE</legend>
-                        <div class="row">
+                    <!-- <div col-md-3> -->
+                        <legend>DEVICE TYPE</legend>
+                        <div class="row aside">
                             <fieldset>
                                 <div>
                                      <input type="checkbox" id="laptop" name="interest"  value="coding"> 
                                      <label for="laptop">Laptop</label>
-                                 </div>
+                                </div>
                                  <div>
                                      <input type="checkbox" id="tablet" name="interest" value="coding">
                                      <label for="tablet">Tablet</label> 
-                                 </div>
-                             </fieldset>
+                                </div>
+                            </fieldset>
                         </div>
-                        <div class="row">
+                        <div class="row aside">
                             <fieldset>
                                 <legend>COLOR</legend>
                                     <div>
@@ -112,7 +114,7 @@
                                         <label for="green">Green</label>
                                     </div>
                                     <div>
-                                        <input type="checkbox" id="blue" name="interest" value="coding">
+                                        <input type="checkbox" id="blue" name="interest"    value="coding">
                                         <label for="blue">Blue</label> 
                                     </div>
                                     <div>
@@ -121,7 +123,7 @@
                                     </div>
                             </fieldset>
                         </div>
-                        <div class="row">
+                        <div class="row aside">
                             <fieldset>
                                 <legend>RAM</legend>
                                     <div>
@@ -141,431 +143,435 @@
                                     </div>
                             </fieldset>
                         </div>
-                    <input type="submit" value="SUBMIT">
-                </div>
+                        <div><input type="submit" value="SUBMIT"></div>
+                    <!-- </div> -->
                 </aside>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-9 headline-main">
-                            <div>
-                                <p>Laptops and Tablets</p>
+                <div class="col-md-9">
+                    <div class="col-md-12 headline-main">
+                        <div class="row breadcrumbs">
+                            <div class="col-md-8 headline-main"><p>Laptops and Tablets</p></div>
+                            <div class="col-md-2 sort_by">
+                                <select>
+                                    <option class="sort" value="sort by price">sort by price</option>
+                                </select>
                             </div>
-                                <div>
-                                    <select name="sort">
-                                        <option value="sort by price">sort by price</option>
-                                    </select>
-                                </div>
-                                <div class="row row2">
-                                    <div class="col-md-4">
-                                        <div class="items">
-                                           <div class="product-pic">
-                                                <div class="product-img product">
-                                                    <img src="images/icon17.png" alt="device">
-                                                        <div class="zoom"></div>
-                                                        <div class="favourite"></div>
-                                                </div>
-                                            </div>
-                                            <div class="product-description product">
-                                                <div class="device device-name">
-                                                    <span>#1 Device Name</span>
-                                                </div>
-                                                <div class="device">
-                                                    Lorem ippsum dolor sit amet, consectetur adipisicing elit.
-                                                </div>
-                                                <div class="device">
-                                                    <span>TYPE:</span> Laptop
-                                                </div>
-                                                <div class="device">
-                                                    <span>SCREEN SIZE:</span> 7 inches
-                                                </div>
-                                                <div class="device">
-                                                    <span>RAM:</span> 1GB
-                                                </div>
-                                                <div class="product-price product">$599
-                                                    <div class="change">25</div>
-                                                </div>
-                                                <div class="btns">
-                                                    <div class="details">
-                                                       <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
-                                                    </div>
-                                                </div>
-                                                <div class="btns">
-                                                    <div class="add-to-cart">
-                                                        <button class="add-to-cart-btn">
-                                                            <div class="white-cart"></div>
-                                                            <div class="addtocart">ADD TO CART</div>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row row2">
+                            <div class="col-md-4">
+                                <div class="items">
+                                   <div class="product-pic">
+                                        <div class="product-img product">
+                                            <img src="images/icon17.png" alt="device">
+                                                <div class="zoom"></div>
+                                                <div class="favourite"></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="items">
-                                            <div class="product-pic product">
-                                                <div class="product-img">
-                                                    <img src="images/icon9.png" alt="device">
-                                                    <div class="zoom"></div>
-                                                    <div class="favourite"></div>
-                                                </div>
-                                            </div>
-                                            <div class="product-description product">
-                                                <div class="device device-name">
-                                                    <span>#2 Device Name</span>
-                                                </div>
-                                                <div class="device">
-                                                    Lorem ippsum dolor sit amet, consectetur adipisicing elit.
-                                                </div>
-                                                <div class="device">
-                                                    <span>TYPE:</span> Laptop
-                                                </div>
-                                                <div class="device">
-                                                    <span>SCREEN SIZE:</span> 7 inches
-                                                </div>
-                                                <div class="device">
-                                                    <span>RAM:</span> 1GB
-                                                </div>
-                                                <div class="product-price product">$1250
-                                                    <div class="change2">99</div>
-                                                </div>
-                                                <div class="btns">
-                                                    <div class="details">
-                                                        <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
-                                                    </div>
-                                                </div>
-                                                <div class="btns">
-                                                    <div class="add-to-cart">
-                                                        <button class="add-to-cart-btn">
-                                                            <div class="white-cart"></div>
-                                                            <div class="addtocart">ADD TO CART</div>
-                                                        </button>
-                                                    </div>
-                                                </div>
+                                    <div class="product-description product">
+                                        <div class="device device-name">
+                                            <span>#1 Device Name</span>
+                                        </div>
+                                        <div class="device">
+                                            Lorem ippsum dolor sit amet, consectetur adipisicing elit.
+                                        </div>
+                                        <div class="device">
+                                            <span>TYPE:</span> Laptop
+                                        </div>
+                                        <div class="device">
+                                            <span>SCREEN SIZE:</span> 7 inches
+                                        </div>
+                                        <div class="device">
+                                            <span>RAM:</span> 1GB
+                                        </div>
+                                        <div class="product-price product">$599
+                                            <div class="change">25</div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="details">
+                                               <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="items">
-                                            <div class="product-pic product">
-                                                <div class="product-img">
-                                                    <img src="images/icon10.png" alt="device">
-                                                    <div class="zoom"></div>
-                                                    <div class="favourite"></div>
-                                                </div>
-                                            </div>
-                                            <div class="product-description product">
-                                                <div class="device device-name">
-                                                    <span>#3 Device Name</span>
-                                                </div>
-                                                <div class="device">
-                                                    Lorem ippsum dolor sit amet, consectetur adipisicing elit.
-                                                </div>
-                                                <div class="device">
-                                                    <span>TYPE:</span> Laptop
-                                                </div>
-                                                <div class="device">
-                                                    <span>SCREEN SIZE:</span> 7 inches
-                                                </div>
-                                                <div class="device">
-                                                    <span>RAM:</span> 1GB
-                                                </div>
-                                                <div class="product-price product">$399
-                                                    <div class="change">50</div>
-                                                </div>
-                                                <div class="btns">
-                                                    <div class="details">
-                                                        <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
-                                                    </div>
-                                                </div>
-                                                <div class="btns">
-                                                    <div class="add-to-cart">
-                                                        <button class="add-to-cart-btn">
-                                                            <div class="white-cart"></div>
-                                                            <div class="addtocart">ADD TO CART</div>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                                <div class="row row2">
-                                    <div class="col-md-4">
-                                        <div class="items">
-                                            <div class="product-pic product">
-                                                <div class="product-img">
-                                                    <img src="images/icon16.png" alt="device">
-                                                    <div class="zoom"></div>
-                                                    <div class="favourite"></div>
-                                                </div>
-                                            </div>
-                                            <div class="product-description product">
-                                                <div class="device device-name">
-                                                    <span>#1 Device Name</span>
-                                                </div>
-                                                <div class="device">
-                                                    Lorem ippsum dolor sit amet, consectetur adipisicing elit.
-                                                </div>
-                                                <div class="device">
-                                                    <span>TYPE:</span> Laptop
-                                                </div>
-                                                <div class="device">
-                                                    <span>SCREEN SIZE:</span> 7 inches
-                                                </div>
-                                                <div class="device">
-                                                    <span>RAM:</span> 1GB
-                                                </div>
-                                                <div class="product-price product">$599
-                                                    <div class="change">25</div>
-                                                </div>
-                                                <div class="btns">
-                                                    <div class="details">
-                                                        <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
-                                                    </div>
-                                                </div>
-                                                <div class="btns">
-                                                    <div class="add-to-cart">
-                                                        <button class="add-to-cart-btn">
-                                                            <div class="white-cart"></div>
-                                                            <div class="addtocart">ADD TO CART</div>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="items">
-                                            <div class="product-pic product">
-                                                <div class="product-img">
-                                                    <img src="images/icon14.png" alt="device">
-                                                    <div class="zoom"></div>
-                                                    <div class="favourite"></div>
-                                                </div>
-                                            </div>
-                                            <div class="product-description product">
-                                                <div class="device device-name">
-                                                    <span>#2 Device Name</span>
-                                                </div>
-                                                <div class="device">
-                                                    Lorem ippsum dolor sit amet, consectetur adipisicing elit.
-                                                </div>
-                                                <div class="device">
-                                                    <span>TYPE:</span> Laptop
-                                                </div>
-                                                <div class="device">
-                                                    <span>SCREEN SIZE:</span> 7 inches
-                                                </div>
-                                                <div class="device">
-                                                    <span>RAM:</span> 1GB
-                                                </div>
-                                                <div class="product-price product">$1250
-                                                    <div class="change2">99</div>
-                                                </div>
-                                                <div class="btns">
-                                                    <div class="details">
-                                                        <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
-                                                    </div>
-                                                </div>
-                                                <div class="btns">
-                                                    <div class="add-to-cart">
-                                                        <button class="add-to-cart-btn">
-                                                            <div class="white-cart"></div>
-                                                            <div class="addtocart">ADD TO CART</div>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="items">
-                                            <div class="product-pic product">
-                                                <div class="product-img">
-                                                    <img src="images/icon12.png" alt="device">
-                                                    <div class="zoom"></div>
-                                                    <div class="favourite"></div>
-                                                </div>
-                                            </div>
-                                            <div class="product-description product">
-                                                <div class="device device-name">
-                                                    <span>#3 Device Name</span>
-                                                </div>
-                                                <div class="device">
-                                                    Lorem ippsum dolor sit amet, consectetur adipisicing elit.
-                                                </div>
-                                                <div class="device">
-                                                    <span>TYPE:</span> Laptop
-                                                </div>
-                                                <div class="device">
-                                                    <span>SCREEN SIZE:</span> 7 inches
-                                                </div>
-                                                <div class="device">
-                                                    <span>RAM:</span> 1GB
-                                                </div>
-                                                <div class="product-price product">$399
-                                                    <div class="change">50</div>
-                                                </div>
-                                                <div class="btns">
-                                                    <div class="details">
-                                                        <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
-                                                    </div>
-                                                </div>
-                                                <div class="btns">
-                                                    <div class="add-to-cart">
-                                                        <button class="add-to-cart-btn">
-                                                            <div class="white-cart"></div>
-                                                            <div class="addtocart">ADD TO CART</div>
-                                                        </button>
-                                                    </div>
-                                                </div>
+                                        <div class="btns">
+                                            <div class="add-to-cart">
+                                                <button class="add-to-cart-btn">
+                                                    <div class="white-cart"></div>
+                                                    <div class="addtocart">ADD TO CART</div>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                    <div class="row row2">
-                                        <div class="col-md-4">
-                                            <div class="items">
-                                                <div class="product-pic product">
-                                                    <div class="product-img">
-                                                        <img src="images/icon15.png" alt="device">
-                                                        <div class="zoom"></div>
-                                                        <div class="favourite"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-description product">
-                                                    <div class="device device-name">
-                                                        <span>#1 Device Name</span>
-                                                    </div>
-                                                    <div class="device">
-                                                        Lorem ippsum dolor sit amet, consectetur adipisicing elit.
-                                                    </div>
-                                                    <div class="device">
-                                                        <span>TYPE:</span> Laptop
-                                                    </div>
-                                                    <div class="device">
-                                                        <span>SCREEN SIZE:</span> 7 inches
-                                                    </div>
-                                                    <div class="device">
-                                                        <span>RAM:</span> 1GB
-                                                    </div>
-                                                    <div class="product-price product">$599
-                                                        <div class="change">25</div>
-                                                    </div>
-                                                    <div class="btns">
-                                                        <div class="details">
-                                                            <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="btns">
-                                                        <div class="add-to-cart">
-                                                            <button class="add-to-cart-btn">
-                                                                <div class="white-cart"></div>
-                                                                <div class="addtocart">ADD TO CART</div>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="items">
+                                    <div class="product-pic product">
+                                        <div class="product-img">
+                                            <img src="images/icon9.png" alt="device">
+                                            <div class="zoom"></div>
+                                            <div class="favourite"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-description product">
+                                        <div class="device device-name">
+                                            <span>#2 Device Name</span>
+                                        </div>
+                                        <div class="device">
+                                            Lorem ippsum dolor sit amet, consectetur adipisicing elit.
+                                        </div>
+                                        <div class="device">
+                                            <span>TYPE:</span> Laptop
+                                        </div>
+                                        <div class="device">
+                                            <span>SCREEN SIZE:</span> 7 inches
+                                        </div>
+                                        <div class="device">
+                                            <span>RAM:</span> 1GB
+                                        </div>
+                                        <div class="product-price product">$1250
+                                            <div class="change2">99</div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="details">
+                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
-                                            <div class="items">
-                                                <div class="product-pic product">
-                                                    <div class="product-img">
-                                                        <img src="images/icon11.png" alt="device">
-                                                        <div class="zoom"></div>
-                                                        <div class="favourite"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-description product">
-                                                    <div class="device device-name">
-                                                        <span>#2 Device Name</span>
-                                                    </div>
-                                                    <div class="device">
-                                                        Lorem ippsum dolor sit amet, consectetur adipisicing elit.
-                                                    </div>
-                                                    <div class="device">
-                                                        <span>TYPE:</span> Laptop
-                                                    </div>
-                                                    <div class="device">
-                                                        <span>SCREEN SIZE:</span> 7 inches
-                                                    </div>
-                                                    <div class="device">
-                                                        <span>RAM:</span> 1GB
-                                                    </div>
-                                                    <div class="product-price product">$1250
-                                                        <div class="change2">99</div>
-                                                    </div>
-                                                    <div class="btns">
-                                                        <div class="details">
-                                                            <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="btns">
-                                                        <div class="add-to-cart">
-                                                            <button class="add-to-cart-btn">
-                                                                <div class="white-cart"></div>
-                                                                <div class="addtocart">ADD TO CART</div>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="items">
-                                                <div class="product-pic product">
-                                                    <div class="product-img">
-                                                        <img src="images/icon13.png" alt="device">
-                                                        <div class="zoom"></div>
-                                                        <div class="favourite"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-description product">
-                                                    <div class="device device-name">
-                                                        <span>#3 Device Name</span>
-                                                    </div>
-                                                    <div class="device">
-                                                        Lorem ippsum dolor sit amet, consectetur adipisicing elit.
-                                                    </div>
-                                                    <div class="device">
-                                                        <span>TYPE:</span> Laptop
-                                                    </div>
-                                                    <div class="device">
-                                                        <span>SCREEN SIZE:</span> 7 inches
-                                                    </div>
-                                                    <div class="device">
-                                                        <span>RAM:</span> 1GB
-                                                    </div>
-                                                    <div class="product-price product">$399
-                                                        <div class="change">50</div>
-                                                    </div>
-                                                    <div class="btns">
-                                                        <div class="details">
-                                                            <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="btns">
-                                                        <div class="add-to-cart">
-                                                            <button class="add-to-cart-btn">
-                                                                <div class="white-cart"></div>
-                                                                <div class="addtocart">ADD TO CART</div>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <div class="btns">
+                                            <div class="add-to-cart">
+                                            <button class="add-to-cart-btn">
+                                                    <div class="white-cart"></div>
+                                                    <div class="addtocart">ADD TO CART</div>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-
-
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="items">
+                                    <div class="product-pic product">
+                                        <div class="product-img">
+                                            <img src="images/icon10.png" alt="device">
+                                            <div class="zoom"></div>
+                                            <div class="favourite"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-description product">
+                                        <div class="device device-name">
+                                            <span>#3 Device Name</span>
+                                        </div>
+                                        <div class="device">
+                                            Lorem ippsum dolor sit amet, consectetur adipisicing elit.
+                                        </div>
+                                        <div class="device">
+                                            <span>TYPE:</span> Laptop
+                                        </div>
+                                        <div class="device">
+                                            <span>SCREEN SIZE:</span> 7 inches
+                                        </div>
+                                        <div class="device">
+                                            <span>RAM:</span> 1GB
+                                        </div>
+                                        <div class="product-price product">$399
+                                            <div class="change">50</div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="details">
+                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                            </div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="add-to-cart">
+                                                <button class="add-to-cart-btn">
+                                                    <div class="white-cart"></div>
+                                                    <div class="addtocart">ADD TO CART</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="row row2">
+                            <div class="col-md-4">
+                                <div class="items">
+                                    <div class="product-pic product">
+                                        <div class="product-img">
+                                            <img src="images/icon16.png" alt="device">
+                                            <div class="zoom"></div>
+                                            <div class="favourite"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-description product">
+                                        <div class="device device-name">
+                                            <span>#1 Device Name</span>
+                                        </div>
+                                        <div class="device">
+                                            Lorem ippsum dolor sit amet, consectetur adipisicing elit.
+                                        </div>
+                                        <div class="device">
+                                            <span>TYPE:</span> Laptop
+                                        </div>
+                                        <div class="device">
+                                            <span>SCREEN SIZE:</span> 7 inches
+                                        </div>
+                                        <div class="device">
+                                            <span>RAM:</span> 1GB
+                                        </div>
+                                        <div class="product-price product">$599
+                                            <div class="change">25</div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="details">
+                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                            </div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="add-to-cart">
+                                                <button class="add-to-cart-btn">
+                                                    <div class="white-cart"></div>
+                                                    <div class="addtocart">ADD TO CART</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="items">
+                                    <div class="product-pic product">
+                                        <div class="product-img">
+                                            <img src="images/icon14.png" alt="device">
+                                            <div class="zoom"></div>
+                                            <div class="favourite"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-description product">
+                                        <div class="device device-name">
+                                            <span>#2 Device Name</span>
+                                        </div>
+                                        <div class="device">
+                                            Lorem ippsum dolor sit amet, consectetur adipisicing elit.
+                                        </div>
+                                        <div class="device">
+                                            <span>TYPE:</span> Laptop
+                                        </div>
+                                        <div class="device">
+                                            <span>SCREEN SIZE:</span> 7 inches
+                                        </div>
+                                        <div class="device">
+                                            <span>RAM:</span> 1GB
+                                        </div>
+                                        <div class="product-price product">$1250
+                                            <div class="change2">99</div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="details">
+                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                            </div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="add-to-cart">
+                                                <button class="add-to-cart-btn">
+                                                    <div class="white-cart"></div>
+                                                    <div class="addtocart">ADD TO CART</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="items">
+                                    <div class="product-pic product">
+                                        <div class="product-img">
+                                            <img src="images/icon12.png" alt="device">
+                                            <div class="zoom"></div>
+                                            <div class="favourite"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-description product">
+                                        <div class="device device-name">
+                                            <span>#3 Device Name</span>
+                                        </div>
+                                        <div class="device">
+                                            Lorem ippsum dolor sit amet, consectetur adipisicing elit.
+                                        </div>
+                                        <div class="device">
+                                            <span>TYPE:</span> Laptop
+                                        </div>
+                                        <div class="device">
+                                            <span>SCREEN SIZE:</span> 7 inches
+                                        </div>
+                                        <div class="device">
+                                            <span>RAM:</span> 1GB
+                                        </div>
+                                        <div class="product-price product">$399
+                                            <div class="change">50</div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="details">
+                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                            </div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="add-to-cart">
+                                            <button class="add-to-cart-btn">
+                                                    <div class="white-cart"></div>
+                                                    <div class="addtocart">ADD TO CART</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row2">
+                            <div class="col-md-4">
+                                <div class="items">
+                                    <div class="product-pic product">
+                                        <div class="product-img">
+                                            <img src="images/icon15.png" alt="device">
+                                            <div class="zoom"></div>
+                                            <div class="favourite"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-description product">
+                                        <div class="device device-name">
+                                            <span>#1 Device Name</span>
+                                        </div>
+                                        <div class="device">
+                                            Lorem ippsum dolor sit amet, consectetur adipisicing elit.
+                                        </div>
+                                        <div class="device">
+                                            <span>TYPE:</span> Laptop
+                                        </div>
+                                        <div class="device">
+                                            <span>SCREEN SIZE:</span> 7 inches
+                                        </div>
+                                        <div class="device">
+                                            <span>RAM:</span> 1GB
+                                        </div>
+                                        <div class="product-price product">$599
+                                            <div class="change">25</div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="details">
+                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                            </div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="add-to-cart">
+                                                <button class="add-to-cart-btn">
+                                                    <div class="white-cart"></div>
+                                                    <div class="addtocart">ADD TO CART</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="items">
+                                    <div class="product-pic product">
+                                        <div class="product-img">
+                                            <img src="images/icon11.png" alt="device">
+                                            <div class="zoom"></div>
+                                            <div class="favourite"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-description product">
+                                        <div class="device device-name">
+                                            <span>#2 Device Name</span>
+                                        </div>
+                                        <div class="device">
+                                            Lorem ippsum dolor sit amet, consectetur adipisicing elit.
+                                        </div>
+                                        <div class="device">
+                                            <span>TYPE:</span> Laptop
+                                        </div>
+                                        <div class="device">
+                                            <span>SCREEN SIZE:</span> 7 inches
+                                        </div>
+                                        <div class="device">
+                                            <span>RAM:</span> 1GB
+                                        </div>
+                                        <div class="product-price product">$1250
+                                            <div class="change2">99</div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="details">
+                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                            </div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="add-to-cart">
+                                                <button class="add-to-cart-btn">
+                                                    <div class="white-cart"></div>
+                                                    <div class="addtocart">ADD TO CART</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="items">
+                                    <div class="product-pic product">
+                                        <div class="product-img">
+                                            <img src="images/icon13.png" alt="device">
+                                            <div class="zoom"></div>
+                                            <div class="favourite"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-description product">
+                                        <div class="device device-name">
+                                            <span>#3 Device Name</span>
+                                        </div>
+                                        <div class="device">
+                                            Lorem ippsum dolor sit amet, consectetur adipisicing elit.
+                                        </div>
+                                        <div class="device">
+                                            <span>TYPE:</span> Laptop
+                                        </div>
+                                        <div class="device">
+                                            <span>SCREEN SIZE:</span> 7 inches
+                                        </div>
+                                        <div class="device">
+                                            <span>RAM:</span> 1GB
+                                        </div>
+                                        <div class="product-price product">$399
+                                            <div class="change">50</div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="details">
+                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                            </div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="add-to-cart">
+                                                <button class="add-to-cart-btn">
+                                                    <div class="white-cart"></div>
+                                                    <div class="addtocart">ADD TO CART</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="/" class="load-more">Load more...</a>
+                </div>
+            </div>
         </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        @ Copyright 2017
+    </footer>
 </body>
 </html>
