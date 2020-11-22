@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 9 - Shop project</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -25,19 +27,21 @@
                         <ul class="menu">
                             <li><a href="">Home</a></li>
                             <li><a href="">Products
-                                <span class="arrow"></span>
-                            </a>
+                                    <span class="arrow"></span>
+                                </a>
                                 <div class="arrow-down"></div>
                                 <div class="sub-menu">
-                                <ul class="submenu">
-                                    <li><a href="#">Lorem ipsum dolor</a></li>
-                                    <li><a href="#">Sit amet</a></li>
-                                    <li><a href="#">Consectetur adipisicing</a></li>
-                                    <li><a href="#">Tempor incididunt</a></li>
-                                    <li><a href="#">Dolore magna aliqua</a></li>
-                                    <li><a href="#">Ut enim ad minim veniam</a></li>
-                                    <li><a href="#">Quis nostrud</a></li>
-                                </ul></div></li>
+                                    <ul class="submenu">
+                                        <li><a href="#">Lorem ipsum dolor</a></li>
+                                        <li><a href="#">Sit amet</a></li>
+                                        <li><a href="#">Consectetur adipisicing</a></li>
+                                        <li><a href="#">Tempor incididunt</a></li>
+                                        <li><a href="#">Dolore magna aliqua</a></li>
+                                        <li><a href="#">Ut enim ad minim veniam</a></li>
+                                        <li><a href="#">Quis nostrud</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li><a href="">Payment</a></li>
                             <li><a href="">Shipping</a></li>
                         </ul>
@@ -48,7 +52,7 @@
                         <div class="col-md-9">
                             <div class="col-md-4.2">
                                 <form action="" id="search">
-                                <input class="search" type="text" placeholder="search" maxlength="20">
+                                    <input class="search" type="text" placeholder="search" maxlength="20">
                             </div>
                             <div class="col-md-2">
                                 <button type="submit" class="search-btn"></button>
@@ -58,7 +62,7 @@
                         <div class="col-md-3">
                             <div class="cart">
                                 <div class="product-count">4</div>
-                            </div>  
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -84,75 +88,85 @@
         <div class="container">
             <div class="row">
                 <aside class="checkbox">
-                    <!-- <div col-md-3> -->
-                        <legend>DEVICE TYPE</legend>
-                        <div class="row aside">
-                            <fieldset>
-                                <div>
-                                     <input type="checkbox" id="laptop" name="interest"  value="coding"> 
-                                     <label for="laptop">Laptop</label>
-                                </div>
-                                 <div>
-                                     <input type="checkbox" id="tablet" name="interest" value="coding">
-                                     <label for="tablet">Tablet</label> 
-                                </div>
-                            </fieldset>
-                        </div>
-                        <div class="row aside">
-                            <fieldset>
-                                <legend>COLOR</legend>
-                                    <div>
-                                        <input type="checkbox" id="black" name="interest"   value="coding">
-                                        <label for="black">Black</label> 
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="red" name="interest" value="coding">
-                                        <label for="red">Red</label> 
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="green" name="interest" value="coding">
-                                        <label for="green">Green</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="blue" name="interest"    value="coding">
-                                        <label for="blue">Blue</label> 
-                                    </div>
-                                    <div>
-                                       <input type="checkbox" id="orange" name="interest" value="coding">
-                                        <label for="orange">Orange</label>
-                                    </div>
-                            </fieldset>
-                        </div>
-                        <div class="row aside">
-                            <fieldset>
-                                <legend>RAM</legend>
-                                    <div>
-                                        <input type="checkbox">1 GB
-                                    </div>
-                                    <div>
-                                        <input type="checkbox">2 GB
-                                    </div>
-                                    <div>
-                                        <input type="checkbox">3 GB
-                                    </div>
-                                    <div>
-                                        <input type="checkbox">4 GB
-                                    </div>
-                                    <div>
-                                        <input type="checkbox">5 GB
-                                    </div>
-                            </fieldset>
-                        </div>
-                        <div><input type="submit" value="SUBMIT"></div>
-                    <!-- </div> -->
+                    <div class="row aside">
+                        <fieldset>
+                            <legend>DEVICE TYPE</legend>
+                            <div class="aside_boxes">
+                                <input type="checkbox" id="laptop" name="laptop" value="device-type">
+                                <label for="laptop" class="checkbox_label">Laptop</label>
+                            </div>
+                            <div class="aside_boxes">
+                                <input type="checkbox" id="tablet" name="tablet" value="device-type">
+                                <label for="tablet" class="checkbox_label">Tablet</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="row aside">
+                        <fieldset class="color-box">
+                            <legend>COLOR</legend>
+                            <div class="aside_boxes">
+                                <input type="checkbox" id="black" name="black" value="color">
+                                <label for="black" class="checkbox_label">Black</label>
+                            </div>
+                            <div class="aside_boxes">
+                                <input type="checkbox" id="red" name="red" value="color">
+                                <label for="red" class="checkbox_label">Red</label>
+                            </div>
+                            <div class="aside_boxes">
+                                <input type="checkbox" id="green" name="green" value="color">
+                                <label for="green" class="checkbox_label">Green</label>
+                            </div>
+                            <div class="aside_boxes">
+                                <input type="checkbox" id="blue" name="blue" value="color">
+                                <label for="blue" class="checkbox_label">Blue</label>
+                            </div>
+                            <div class="aside_boxes">
+                                <input type="checkbox" id="orange" name="orange" value="color">
+                                <label for="orange" class="checkbox_label">Orange</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="row aside">
+                        <fieldset class="ram-box">
+                            <legend>RAM</legend>
+                            <div class="aside_boxes">
+                                <input type="checkbox" id="one_gb" name="one_gb" value="ram">
+                                <label for="one_gb" class="checkbox_label" name="one_gb" value="ram">1 GB</label>
+                            </div>
+                            <div class="aside_boxes">
+                                <input type="checkbox" id="two_gb" name="one_gb" value="ram">
+                                <label for="two_gb" class="checkbox_label">2 GB</label>
+                            </div>
+                            <div class="aside_boxes">
+                                <input type="checkbox" id="three_gb" name="one_gb" value="ram">
+                                <label for="three_gb" class="checkbox_label">3 GB</label>
+                            </div>
+                            <div class="aside_boxes">
+                                <input type="checkbox" id="four_gb" name="one_gb" value="ram">
+                                <label for="four_gb" class="checkbox_label">4 GB</label>
+                            </div>
+                            <div class="aside_boxes">
+                                <input type="checkbox" id="five_gb" name="one_gb" value="ram">
+                                <label for="five_gb" class="checkbox_label">5 GB</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                        <fieldset class="ram-box">
+                            <div><input type="submit" value="SUBMIT" class="submit-checkbox"></div>
+                        </fieldset>
                 </aside>
                 <div class="col-md-9">
                     <div class="col-md-12 headline-main">
                         <div class="row breadcrumbs">
-                            <div class="col-md-8 headline-main"><p>Laptops and Tablets</p></div>
+                            <div class="col-md-8 headline-main">
+                                <p>Laptops and Tablets</p>
+                            </div>
                             <div class="col-md-2 sort_by">
                                 <select>
                                     <option class="sort" value="sort by price">sort by price</option>
+                                    <option class="sort" value="sort by price">sort by name</option>
+                                    <option class="sort" value="sort by price">sort by place</option>
+                                    <option class="sort" value="sort by price">sort by popularity</option>
                                 </select>
                             </div>
                         </div>
@@ -161,11 +175,11 @@
                         <div class="row row2">
                             <div class="col-md-4">
                                 <div class="items">
-                                   <div class="product-pic">
+                                    <div class="product-pic">
                                         <div class="product-img product">
                                             <img src="images/icon17.png" alt="device">
-                                                <div class="zoom"></div>
-                                                <div class="favourite"></div>
+                                            <div class="zoom"></div>
+                                            <div class="favourite"></div>
                                         </div>
                                     </div>
                                     <div class="product-description product">
@@ -189,7 +203,8 @@
                                         </div>
                                         <div class="btns">
                                             <div class="details">
-                                               <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                                <button onclick="myFunction()" class="more-details-btn">MORE
+                                                    DETAILS</button>
                                             </div>
                                         </div>
                                         <div class="btns">
@@ -233,12 +248,13 @@
                                         </div>
                                         <div class="btns">
                                             <div class="details">
-                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                                <button onclick="myFunction()" class="more-details-btn">MORE
+                                                    DETAILS</button>
                                             </div>
                                         </div>
                                         <div class="btns">
                                             <div class="add-to-cart">
-                                            <button class="add-to-cart-btn">
+                                                <button class="add-to-cart-btn">
                                                     <div class="white-cart"></div>
                                                     <div class="addtocart">ADD TO CART</div>
                                                 </button>
@@ -277,7 +293,8 @@
                                         </div>
                                         <div class="btns">
                                             <div class="details">
-                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                                <button onclick="myFunction()" class="more-details-btn">MORE
+                                                    DETAILS</button>
                                             </div>
                                         </div>
                                         <div class="btns">
@@ -291,7 +308,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>    
+                        </div>
                         <div class="row row2">
                             <div class="col-md-4">
                                 <div class="items">
@@ -323,7 +340,8 @@
                                         </div>
                                         <div class="btns">
                                             <div class="details">
-                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                                <button onclick="myFunction()" class="more-details-btn">MORE
+                                                    DETAILS</button>
                                             </div>
                                         </div>
                                         <div class="btns">
@@ -367,7 +385,8 @@
                                         </div>
                                         <div class="btns">
                                             <div class="details">
-                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                                <button onclick="myFunction()" class="more-details-btn">MORE
+                                                    DETAILS</button>
                                             </div>
                                         </div>
                                         <div class="btns">
@@ -411,12 +430,13 @@
                                         </div>
                                         <div class="btns">
                                             <div class="details">
-                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                                <button onclick="myFunction()" class="more-details-btn">MORE
+                                                    DETAILS</button>
                                             </div>
                                         </div>
                                         <div class="btns">
                                             <div class="add-to-cart">
-                                            <button class="add-to-cart-btn">
+                                                <button class="add-to-cart-btn">
                                                     <div class="white-cart"></div>
                                                     <div class="addtocart">ADD TO CART</div>
                                                 </button>
@@ -457,7 +477,8 @@
                                         </div>
                                         <div class="btns">
                                             <div class="details">
-                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                                <button onclick="myFunction()" class="more-details-btn">MORE
+                                                    DETAILS</button>
                                             </div>
                                         </div>
                                         <div class="btns">
@@ -501,7 +522,8 @@
                                         </div>
                                         <div class="btns">
                                             <div class="details">
-                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                                <button onclick="myFunction()" class="more-details-btn">MORE
+                                                    DETAILS</button>
                                             </div>
                                         </div>
                                         <div class="btns">
@@ -545,7 +567,8 @@
                                         </div>
                                         <div class="btns">
                                             <div class="details">
-                                                <button onclick="myFunction()" class="more-details-btn">MORE DETAILS</button>
+                                                <button onclick="myFunction()" class="more-details-btn">MORE
+                                                    DETAILS</button>
                                             </div>
                                         </div>
                                         <div class="btns">
@@ -574,4 +597,5 @@
         @ Copyright 2017
     </footer>
 </body>
+
 </html>
